@@ -21,6 +21,10 @@
 			margin: 0 auto;
 			font-family: 'Ubuntu', sans-serif;
 		}
+
+		.container {
+			max-width: 100%;
+		}
 		.nav-link {
 			color: white !important;
 		}
@@ -37,21 +41,68 @@
 			color: lightblue;
 		}
 
-		.carousel-control-next {
-    		left: 20 !important;
+		.carousel-control-next, .carousel-control-prev {
+			position: absolute;
+			top: 75%;
+			
 		}
 
+		.carousel-control-next {
+    		left: 15%;
+    		width: 5% !important;
+		}
+
+		.carousel-control-prev {
+    		left: 10%;
+    		width: 5% !important;
+
+		}
+
+		.carousel-control-prev-icon {
+    		background-image: url('images/prev.png') !important;
+    		width: 40px;
+    		height: 40px;
+		}
+
+		.carousel-control-next-icon {
+    		background-image: url('images/next.png') !important;
+    		width: 40px;
+    		height: 40px;
+		}
+
+		.carousel-control-next:focus, 
+		.carousel-control-next:hover, 
+		.carousel-control-prev:focus, 
+		.carousel-control-prev:hover {
+		    color: #D8D8D8 !important;
+		    text-decoration: none;
+		    outline: 0;
+		    opacity: .9;
+		}
+
+		.carousel-caption {
+			text-align: left;
+			top: 40%;
+			width: 40%;
+			left: 12%;
+		}
+	
 		.mid-large-text {
 			max-width: 33%;
 			text-align: center;
 		}
+
+		.mid-large-text h2:first-child {
+			color: #33BBFF;
+		}
+
 		.mid-small-text {
 			max-width: 40%;
 			text-align: center;
 		}
 
-		.tab-1,
-		.tab-2 {
+		#tab1,
+		#tab2 {
 			color: black !important;
 		}
 
@@ -60,11 +111,13 @@
 		}
 
 		.gallery-large-text {
-
+			padding-left: 11.5%;
 		}
 
 		.gallery-container {
 			text-align: center;
+			margin-bottom: 5%;
+			width: 80%;
 		}
 
 		.more {
@@ -75,6 +128,43 @@
 		.more:visited {
 			color: #33BBFF;
 			text-decoration: none;
+		}
+
+		.bottom-section {
+			text-align: center;
+			background-color: #F3F3F3;
+			padding-top: 10%;
+			margin: 0 auto;
+			width: 100%;
+		}
+
+		.bottom-logo {
+			justify-content: center;
+			margin-bottom: 2%;
+		}
+
+		.bottom-text {
+			width: 33%;
+			margin: 0 auto;
+
+		}
+
+		.bottom-text p {
+			margin-bottom: 2%;
+		}
+
+		.bottom-text p:nth-child(3) {
+			margin-bottom: 6%;
+		}
+
+		.learn-more {
+			justify-content: center;
+		}
+
+		.learn-more a {
+			background-color: #33BBFF;
+			color: white;
+			padding: .5% 1%;
 		}
 	</style>
 </head>
@@ -91,7 +181,7 @@
           Section 1
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
+          <p class="dropdown-item" href="#">LOREM IPSUM</p>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -129,19 +219,19 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="images/slide1.png" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
-      <h3>Lorem Ipsum Doler</h3>
+      <h5>Lorem Ipsum Doler</h5>
       <h2>Headline Goes Here</h2>
-      <h3>Donec quam delis, ultricies nec, pellen tesque, eu,quis,sem.
+      <h5>Donec quam delis, ultricies nec, pellen tesque, eu,quis,sem.
           Nulla consequat quis enim. Donec podo justo, fringilla vel, aliquet nex, vulpate eget, arcu
-      </h3>
+      </h5>
   </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="images/slide2.png" alt="Second slide">
       <div class="carousel-caption d-none d-md-block">
-      <h3>Lorem Ipsum Doler</h3>
-      <h2>Headline Goes Here</h2>
-      <h3>Donec quam delis, ultricies nec, pellen tesque, eu,quis,sem.
+      <h5>Lorem Ipsum Doler</h5>
+      <h2>Headline Goes Here</h5>
+      <h5>Donec quam delis, ultricies nec, pellen tesque, eu,quis,sem.
           Nulla consequat quis enim. Donec podo justo, fringilla vel, aliquet nex, vulpate eget, arcu
       </h3>
     </div>
@@ -156,7 +246,12 @@
   </a>
 </div>
 
+
+
+
+
 <div class="container mid-large-text">
+  <h2>__</h2>
   <h2>Lorem ipsum doler esutc esturerur</h2>
 </div>
 
@@ -164,9 +259,6 @@
   <p>Vivamus elementym semper nisi, Aenean vulp utate eleifend tellus.
      Aenean leo ligula, porttitor eu, consequat vitae.</p>
 </div>
-
-
-
 
 <div class="container gallery-large-text">
   <h2>Explore all of the latest <br />lorem ipsum content</h2>
@@ -197,6 +289,23 @@
     </div>
   </div>
   
+</div>
+
+<div class="container bottom-section">
+	<div class="row bottom-logo">
+		<img src="images/bottom-logo.png">
+	</div>
+	<div class="row bottom-text">
+		<p>Lorem ipsum dolor sit arnet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</p>
+
+		<p>Cum sociis natuque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+		<p>Donec pede justo, fringilla vel, aliquet nec, vulputata eget, arcu. In enim justo, dhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. INteger tincidunt. Vivamus elementum semper nisi.</p>
+	</div>
+
+	<div class="row learn-more">
+		<a href="#">LEARN MORE</a>
+	</div>
 </div>
 
 
