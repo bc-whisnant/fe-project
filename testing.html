@@ -8,210 +8,65 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<!-- the following are required for font awesome -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-	<!-- font taken from google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-
-	<title></title>
-
-	<style type="">
-
-		body {
-			max-width: 1600px;
-			margin: 0 auto;
-			font-family: 'Ubuntu', sans-serif;
-		}
-
-		.container {
-			max-width: 100%;
-		}
-		.nav-link {
-			color: white !important;
-		}
-
-		.navbar-nav {
-			padding-left: 30%;
-		}
-
-		.header-logo {
-			padding-left: 4%;
-		}
-
-		.fa-search {
-			color: lightblue;
-		}
-
-		.carousel-control-next, .carousel-control-prev {
-			position: absolute;
-			top: 75%;
-			
-		}
-
-		.carousel-control-next {
-    		left: 15%;
-    		width: 5% !important;
-		}
-
-		.carousel-control-prev {
-    		left: 10%;
-    		width: 5% !important;
-
-		}
-
-		.carousel-control-prev-icon {
-    		background-image: url('images/prev.png') !important;
-    		width: 40px;
-    		height: 40px;
-		}
-
-		.carousel-control-next-icon {
-    		background-image: url('images/next.png') !important;
-    		width: 40px;
-    		height: 40px;
-		}
-
-		.carousel-control-next:focus, 
-		.carousel-control-next:hover, 
-		.carousel-control-prev:focus, 
-		.carousel-control-prev:hover {
-		    color: #D8D8D8 !important;
-		    text-decoration: none;
-		    outline: 0;
-		    opacity: .9;
-		}
-
-		.carousel-caption {
-			text-align: left;
-			top: 40%;
-			width: 40%;
-			left: 12%;
-		}
-	
-		.mid-large-text {
-			max-width: 33%;
-			text-align: center;
-		}
-
-		.mid-large-text h2:first-child {
-			color: #33BBFF;
-		}
-
-		.mid-small-text {
-			max-width: 40%;
-			text-align: center;
-		}
-
-		#tab1,
-		#tab2 {
-			color: black !important;
-		}
-
-		.tab-content {
-			text-align: center;
-		}
-
-		.gallery-large-text {
-			padding-left: 11.5%;
-		}
-
-		.gallery-container {
-			text-align: center;
-			margin-bottom: 5%;
-			width: 80%;
-		}
-
-		.more {
-			color: #33BBFF;
-			text-decoration: none;
-		}
-
-		.more:visited {
-			color: #33BBFF;
-			text-decoration: none;
-		}
-
-		.bottom-section {
-			text-align: center;
-			background-color: #F3F3F3;
-			padding-top: 10%;
-			margin: 0 auto;
-			width: 100%;
-		}
-
-		.bottom-logo {
-			justify-content: center;
-			margin-bottom: 2%;
-		}
-
-		.bottom-text {
-			width: 33%;
-			margin: 0 auto;
-
-		}
-
-		.bottom-text p {
-			margin-bottom: 2%;
-		}
-
-		.bottom-text p:nth-child(3) {
-			margin-bottom: 6%;
-		}
-
-		.learn-more {
-			justify-content: center;
-		}
-
-		.learn-more a {
-			background-color: #33BBFF;
-			color: white;
-			padding: .5% 1%;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Front End Project</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-	<div class="header-logo">
-	  	<img src="images/logo.png" alt="logo placeholder">
-	</div>
-    <ul class="navbar-nav justify-content-end">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Section 1
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <p class="dropdown-item" href="#">LOREM IPSUM</p>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Section 2
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Section 3</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Section 4</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Section 5</a>
-      </li>
-      <li>
-      <a class="nav-link" href=""><i class="nav-item fas fa-search"></i></a>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light  bg-dark">
+	  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+		<div class="header-logo">
+		  	<img src="images/logo.png" alt="logo placeholder">
+		</div>
+		<div class="navigation">
+			<ul class="navbar-nav justify-content-end">
+		      <li class="nav-item dropdown">
+		        <a id="section1-click" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Section 1
+		        </a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Section 2
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Action</a>
+		          <a class="dropdown-item" href="#">Another action</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Something else here</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Section 3</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Section 4</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Section 5</a>
+		      </li>
+		      <li>
+		      <a class="nav-link" href=""><i class="nav-item fas fa-search"></i></a>
+		      </li>
+	    	</ul>
+		</div>
+	    
 </nav>
+
+<div id="section-1-container" class="container">
+	<div class="row">
+		<div class="col section-1-contents">
+			<p>LOREM IPSUM</p>
+			<h5>Lorem ipsum dolor sit amet consectetuer adipscing elit</h5>
+			<a href="#">LEARN MORE</a>
+		</div>
+		<div class="col section-1-contents">
+			<p>LOREM IPSUM</p>
+			<h5>Lorem ipsum dolor sit amet consectetuer adipscing elit</h5>
+			<a href="#">LEARN MORE</a>
+		</div>
+	</div>
+</div>
 
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -224,6 +79,8 @@
       <h5>Donec quam delis, ultricies nec, pellen tesque, eu,quis,sem.
           Nulla consequat quis enim. Donec podo justo, fringilla vel, aliquet nex, vulpate eget, arcu
       </h5>
+      <br>
+      <span><img src="images/play-button.png">&nbsp; &nbsp; WATCH NOW</span>
   </div>
     </div>
     <div class="carousel-item">
@@ -233,7 +90,9 @@
       <h2>Headline Goes Here</h5>
       <h5>Donec quam delis, ultricies nec, pellen tesque, eu,quis,sem.
           Nulla consequat quis enim. Donec podo justo, fringilla vel, aliquet nex, vulpate eget, arcu
-      </h3>
+      </h5>
+      <br>
+      <span><img src="images/play-button.png">&nbsp; &nbsp; WATCH NOW</span>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -260,35 +119,56 @@
      Aenean leo ligula, porttitor eu, consequat vitae.</p>
 </div>
 
+<!-- tab code goes here -->
+
+<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="tab1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Tab 1 Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="tab2" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Tab 2</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  	<a href="#">LOREM IPSUM</a>
+  	<p>Lorem ipsum dolor sit amet, 
+  	consectetuer adipiscing elit.</p>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+</div>
+
 <div class="container gallery-large-text">
   <h2>Explore all of the latest <br />lorem ipsum content</h2>
 </div>
 
 <div class="container gallery-container">
-  <div class="row">
-    <div class="col">
-      <img src="images/video-placeholder.png">
-      <p>LOREM IPSUM: SUBHEADLINE</p>
-      <h3>Headline 1</h3>
-      <p>Donec quam felis, ultricies nec, pellen tesque eu, sem. Nulla consequat quis enim. Donec pede justo, fringilla vel, aliquer nex, vulputate eget, arcu.</p>
-      <a class="more" href="">WATCH NOW</a>
-    </div>
-    <div class="col">
-       <img src="images/gallery-placeholder.png">
-       <p>LOREM IPSUM: SUBHEADLINE</p>
-       <h3>Headline 1</h3>
-       <p>Donec quam felis, ultricies nec, pellen tesque eu, sem. Nulla consequat quis enim. Donec pede justo, fringilla vel, aliquer nex, vulputate eget, arcu.</p>
-       <a class="more" href="">READ MORE</a>
-    </div>
-    <div class="col">
-       <img src="images/gallery-placeholder.png">
-       <p>LOREM IPSUM: SUBHEADLINE</p>
-       <h3>Headline 1</h3>
-       <p>Donec quam felis, ultricies nec, pellen tesque eu, sem. Nulla consequat quis enim. Donec pede justo, fringilla vel, aliquer nex, vulputate eget, arcu.</p>
-       <a class="more" href="">READ MORE</a>
-    </div>
-  </div>
-  
+<!-- wrapped into multiple containers to replicate inner offset -->
+	<div class="inner-gallery">
+		<div class="row custom-row">
+		    <div class="col gallery-member">
+		      <img src="images/video-placeholder.png">
+		      <p>LOREM IPSUM: SUBHEADLINE</p>
+		      <h3>Headline 1</h3>
+		      <p>Donec quam felis, ultricies nec, pellen tesque eu, sem. Nulla consequat quis enim. Donec pede justo, fringilla vel, aliquer nex, vulputate eget, arcu.</p>
+		      <a class="more" href="">WATCH NOW</a>
+		    </div>
+		    <div class="col gallery-member">
+		       <img src="images/gallery-placeholder.png">
+		       <p>LOREM IPSUM: SUBHEADLINE</p>
+		       <h3>Headline 1</h3>
+		       <p>Donec quam felis, ultricies nec, pellen tesque eu, sem. Nulla consequat quis enim. Donec pede justo, fringilla vel, aliquer nex, vulputate eget, arcu.</p>
+		       <a class="more" href="">READ MORE</a>
+		    </div>
+		    <div class="col gallery-member">
+		       <img src="images/gallery-placeholder.png">
+		       <p>LOREM IPSUM: SUBHEADLINE</p>
+		       <h3>Headline 1</h3>
+		       <p>Donec quam felis, ultricies nec, pellen tesque eu, sem. Nulla consequat quis enim. Donec pede justo, fringilla vel, aliquer nex, vulputate eget, arcu.</p>
+		       <a class="more" href="">READ MORE</a>
+		    </div>
+		  </div>
+	</div>
 </div>
 
 <div class="container bottom-section">
@@ -308,7 +188,29 @@
 	</div>
 </div>
 
+<div class="container footer">
+	<div class="bottom-company-text">
+		<p>&copy; COMPANY NAME GOES HERE</p>
+	</div>
+
+	<div class="bottom-social-media">
+		<ul>
+			<li><i class="fab fa-facebook-f"></i></li>
+
+			<li><i class="fab fa-twitter"></i></li>
+
+			<li><i class="fab fa-pinterest-p"></i></li>
+
+			<li><i class="fab fa-youtube"></i></li>
+			<!-- couldn't find meaning of S icon...added this one instead -->
+			<li><i class="fab fa-codepen"></i></li>
+
+			<li><i class="fab fa-instagram"></i></li>
+		</ul>
+	</div>
+</div>
 
 
+<script src="js/layout.js"></script>
 </body>
 </html>
