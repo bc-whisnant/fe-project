@@ -17,4 +17,18 @@ function showAndHide() {
 
 }
 
+document.getElementById('section2-click').addEventListener('click', showAndHide);
+
+function showAndHide() {
+
+    var sectionTwo = document.getElementById('section-2-container');
+
+    if (sectionTwo.style.display === "none") {
+        sectionTwo.style.display = "block";
+    } else {
+        sectionTwo.style.display = "none";
+    }
+
+}
+
 
