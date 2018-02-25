@@ -46,13 +46,13 @@ body {
 		}
 
 		.carousel-control-prev-icon {
-    		background-image: url('images/prev.png') !important;
+    		background-image: url('../images/prev.png') !important;
     		width: 40px;
     		height: 40px;
 		}
 
 		.carousel-control-next-icon {
-    		background-image: url('images/next.png') !important;
+    		background-image: url('../images/next.png') !important;
     		width: 40px;
     		height: 40px;
 		}
@@ -78,6 +78,41 @@ body {
 			color: lightblue;
 		}
 
+		.scroll-section {
+			position: absolute;
+		    background-color: white;
+		    bottom: 0;
+		    right: 0;
+		    text-align: center;
+		}
+
+		.scroll-section a,
+		.back-to-top a {
+			color: lightblue;
+			display: block;
+			padding-top: 10px;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		    font-size: .75em;
+		    text-decoration: none;
+
+		}
+
+		.back-to-top {
+			position: absolute;
+		    background-color: white;
+			width: 91px;
+			bottom: 80px;
+			right: 0;
+		    text-align: center;
+		}
+		.scroll-section a:hover, 
+		.scroll-section a:visited,
+		.back-to-top a:hover, 
+		.back-to-top a:visited {
+			color: lightblue;
+			text-decoration: none;
+		}
 		#section-1-container {
 			display: none;
 			background-color: #343a40!important;
